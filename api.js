@@ -35,7 +35,7 @@ app.get("/search/:key",async(req,resp)=>{
 app.get("/list/:id",async(req,resp)=>{
     let data= await Product.find();
     let id=req.params.id;
-    resp.send(data.find(e=>e.id==id));
+    resp.send(data.find(e=>e.id==id))
 })
 
 
